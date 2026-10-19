@@ -1,3 +1,5 @@
+import dotenv from "dotenv";
+dotenv.config({ path: ".env.local" });
 import { db } from "../lib/db";
 import { constitution, paintingState } from "../lib/schema";
 
