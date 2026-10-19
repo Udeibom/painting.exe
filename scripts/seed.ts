@@ -1,9 +1,9 @@
 import dotenv from "dotenv";
 dotenv.config({ path: ".env.local" });
-import { db } from "../lib/db";
-import { constitution, paintingState } from "../lib/schema";
 
 async function main() {
+  const { db } = await import("../lib/db");
+  const { constitution, paintingState } = await import("../lib/schema");
   await db.insert(constitution).values({
     id: "default",
     version: 1,
