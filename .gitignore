@@ -6,3 +6,7 @@
 node_modules/
 .next/
 *.tsbuildinfo
+
+.agents/
+.claude/
+agent/
